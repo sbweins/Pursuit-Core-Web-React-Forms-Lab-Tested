@@ -16,8 +16,8 @@ describe("index", () => {
 
   it("says the sum when that is the selected option", () => {
     cy.get("input").type("3,5,15,7,5");
-    cy.get("button").click();
     cy.get("select").select("sum");
+    cy.get("button").click();
     cy.contains("35");
   });
 
@@ -33,13 +33,5 @@ describe("index", () => {
     cy.get("select").select("mode");
     cy.get("button").click();
     cy.contains("5");
-  });
-
-  it("submits from an enter keypress too", () => {
-    cy.get("input").type("3,5,15,7,5");
-    cy.get("button").click();
-    cy.get("select").select("sum");
-    cy.get("form").trigger("submit");
-    cy.contains("35");
   });
 });

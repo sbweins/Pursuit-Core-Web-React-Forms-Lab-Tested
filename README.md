@@ -9,7 +9,7 @@ Build a React app containing:
 - An input where the user can enter comma-separated number values in an array
 - A select to choose between calculating the sum, the average, and the [mode](https://www.mathsisfun.com/definitions/mode.html) (most frequently occurring number)
 - A calculate button that, when pressed, puts the result of the selected operation on the input numbers on the screen
-  - If the numbers are invalid for some reason, put `Invalid input.`
+  - If the numbers are invalid for some reason, put `Invalid input.` (Notice the period at the end.)
 
 For example, if the text input contains `1,3,3,7` and the select is set to `sum`, clicking the button should print `14` to the screen.
 Switching the select to `mode` and clicking the button again would replace that with `3`.
@@ -48,3 +48,8 @@ Switching the select to `mode` and clicking the button again would replace that 
 
 - Change the select input to show all three elements at once using `size`, and allow selecting `multiple`.
 - When the button is pressed, print each selected operation onto the screen on a new line, like _`Sum: 35`_.
+- Bonus hints:
+  - [Select multiple example and documentation](https://www.w3schools.com/tags/att_select_multiple.asp)
+  - In the `<select>` element's `onChange` callback, you will need to use `e.target.options`. How would the `selected` and `value` attributes of an `option` be helpful to you here?
+  - In your component state, should the selected options be a string, an array, or some other data structure?
+  - Should the result you compute be a number, a string, an array of strings, or some other data structure?
