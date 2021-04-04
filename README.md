@@ -50,6 +50,6 @@ Switching the select to `mode` and clicking the button again would replace that 
 - When the button is pressed, print each selected operation onto the screen on a new line, like _`Sum: 35`_.
 - Bonus hints:
   - [Select multiple example and documentation](https://www.w3schools.com/tags/att_select_multiple.asp)
-  - In the `<select>` element's `onChange` callback, you will need to use `e.target.options`. How would the `selected` and `value` attributes of an `option` be helpful to you here?
+  - In the `<select>` element's `onChange` callback, you will need to use `e.target.selectedOptions`.
   - In your component state, should the selected options be a string, an array, or some other data structure?
   - Should the result you compute be a number, a string, an array of strings, or some other data structure?
