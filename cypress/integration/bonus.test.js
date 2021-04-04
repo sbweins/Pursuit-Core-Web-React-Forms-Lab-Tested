@@ -1,4 +1,4 @@
-describe("index", () => {
+describe("bonus", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000");
   });
